@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Minimal Blog Card</title>
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        font-family: "Sora", sans-serif;
+      }
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+      }
+
+      .author-info a {
+        text-decoration: none;
+      }
+
+      .section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+
+        overflow:hidden;
+      }
+
+      .container {
+        max-width: 400px;
+        border-radius: 5px;
+        box-shadow: rgb(0, 0, 0, 0.05) 0px 10px 20px, /* Soft bottom shadow */
+        rgba(0, 0, 0, 0.02) 10px 10px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .content {
+        margin: 18px 18px;
+        border-radius: 10px;
+      }
+      img {
+        border-radius: 10px;
+        width: 100%;
+      }
+      .design {
+        margin-top: 12px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+      }
+      .text {
+        color: #7c19ee;
+        padding: 7px 7px;
+        background-color: #FAFAF9;
+        border-radius: 20px;
+        font-size: 10px;
+        font-weight: 700;
+      }
+      .body {
+        margin-top: 20px;
+        text-align: left;
+        
+      }
+      .body h1 {
+        font-size: 18px;
+        color: #20293A;
+      }
+      .body p {
+        font-size: 14px;
+        color: #394150;
+      }
+      .footer {
+        margin-top: 20px;
+        color: #394150;
+      }
+
+      /* Media query */
+      @media (min-width: 1280px) {
+        .footer {
+          margin-top: 40px; 
+        }
+      }
+      .description {
+        font-size: 0.75rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="author-info">
+      Coded by <a href="#">Ravinder Kaur</a> 
+    </div>
+    <section class="section">
+      <div class="container">
+        <div class="content">
+          <div class="img">
+            <img src="resources/Cactus.jpg" alt="" />
+          </div>
+          <div class="design">
+            <p><span class="text">Design</span></p>
+          </div>
+          <div class="body">
+            <h1>Embracing Minimalism</h1>
+            <p class="description">
+              From minimalist sculptures to minimalist <br>paintings, this blog will
+              inspire you to <br> appreciate the beauty that lies in simplicity.
+            </p>
+
+            <div class="footer">
+              <span class="description"> Annie Spratt</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
